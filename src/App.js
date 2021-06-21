@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from "./components/Nav";
-import Menu from './components/Menu'
+import Menu from './components/Menu';
+import Home from './components/Home'
 import Particles from 'react-particles-js'
 import particlesConfig from './assets/particlesConfig';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,6 +21,7 @@ function App() {
     <div>
       <Nav></Nav>
       <Menu></Menu>
+      <Home></Home>
       <Particles params={particlesConfig}/>
     </div>
   );

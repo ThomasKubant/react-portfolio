@@ -1,5 +1,6 @@
 import { Button, Col } from 'react-bootstrap'
 import React from 'react'
+import logo from '../../assets/images/logo.png'
 
 function openMenu() {
   document.getElementById("menu").style.height = "100%";
@@ -8,9 +9,9 @@ function openMenu() {
 function Nav() {
     return (
         <header className="flex-row flex-spaceBetween navBar">
-            <Col md='10'><h1><a href='/'>LOGO</a></h1></Col>
+            <Col md='10'><img src={logo}></img></Col>
             <Button variant='outline-light'>Contact Me</Button>
-            <Button variant='light' id='openMenuBtn' onClick={openMenu}>Menu</Button>
+            <Button variant='outline-light' id='openMenuBtn' onClick={openMenu}>Menu</Button>
         </header>
     )
 }
