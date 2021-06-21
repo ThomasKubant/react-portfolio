@@ -17,6 +17,7 @@ body {
 
 .navBar {
     margin: 10px 15px;
+    align-items: flex-start!important;
 }
 
 .overlay {
