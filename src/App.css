@@ -6,6 +6,10 @@ body {
     background-color: #8a2be2;
 }
 
+.overlay-content a {
+  text-decoration: none;
+}
+
 .flex-row {
     display: flex;
     align-items: center;
@@ -17,6 +21,7 @@ body {
 
 .navBar {
     margin: 10px 15px;
+    align-items: flex-start!important;
 }
 
 .overlay {
@@ -56,7 +61,7 @@ body {
 }
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+.closeBtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -106,4 +111,5 @@ body {
 h1, h2 {
   color: #f1f1f1;
   text-shadow: 2px 2px #272727;
+  text-align: center;
 }

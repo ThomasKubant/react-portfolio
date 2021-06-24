@@ -9,7 +9,7 @@ function openMenu() {
 function Nav() {
     return (
         <header className="flex-row flex-spaceBetween navBar">
-            <Col md='10'><img src={logo}></img></Col>
+            <Col md='10'><img src={logo} alt="me :)"></img></Col>
             <Button variant='outline-light'>Contact Me</Button>
             <Button variant='outline-light' id='openMenuBtn' onClick={openMenu}>Menu</Button>
         </header>
