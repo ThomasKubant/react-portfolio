@@ -39,8 +39,8 @@ function App() {
   const [currentOption, setCurrentOption] = useState(menuOptions[0]);
 
   return (
-    <div>
-      <Nav></Nav>
+    <div id="app">
+      <Nav></Nav> 
       <Menu
       menuOptions={menuOptions}
       currentOption={currentOption}
