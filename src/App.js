@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from "./components/Nav";
 import Menu from './components/Menu';
-import Home from './components/Home'
+import Content from './components/Content'
 import Particles from 'react-particles-js'
 import particlesConfig from './assets/particlesConfig';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,11 +17,38 @@ function closeMenu() {
 } 
 
 function App() {
+  const menuOptions = [
+    {
+      name: "home",
+      text: "Home"
+    },
+    {
+      name: "about",
+      text: "About Me"
+    },
+    {
+      name: "projects",
+      text: "Projects"
+    },
+    {
+      name: "social",
+      text: "Social Media"
+    }
+  ]
+
+  const [currentOption, setCurrentOption] = useState(menuOptions[0]);
+
   return (
-    <div>
-      <Nav></Nav>
-      <Menu></Menu>
-      <Home></Home>
+    <div id="app">
+      <Nav></Nav> 
+      <Menu
+      menuOptions={menuOptions}
+      currentOption={currentOption}
+      setCurrentOption={setCurrentOption}
+      ></Menu>
+      <Content
+      currentOption={currentOption}
+      ></Content>
       <Particles params={particlesConfig}/>
     </div>
   );

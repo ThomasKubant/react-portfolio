@@ -6,9 +6,20 @@ body {
     background-color: #8a2be2;
 }
 
+.overlay-content a {
+  text-decoration: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .flex-row {
     display: flex;
     align-items: center;
+    flex-wrap:nowrap;
 }
 
 .flex-spaceBetween {
@@ -28,7 +39,7 @@ body {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0, 0.8); /* Black w/opacity */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -39,6 +50,7 @@ body {
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  list-style: none;
 }
 
 .overlay h1 {
@@ -57,11 +69,15 @@ body {
 }
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+.closeBtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+#openMenuBtn {
+  margin-left: 10px;
 }
 
 #tsparticles canvas {
@@ -107,4 +123,27 @@ body {
 h1, h2 {
   color: #f1f1f1;
   text-shadow: 2px 2px #272727;
+  text-align: center;
+}
+
+p {
+  color: #f1f1f1;
+  text-shadow: 1px 1px #272727;
+  font-size: 24px;
+  width: 75vw;
+  align-self: center;
+}
+
+.content {
+  margin-top: 60px;
+
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 94px;
+    height: 75px;
+  }
+  .btn {
+    font-size: 1rem;
+  }
 }

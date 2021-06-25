@@ -1,21 +1,29 @@
-import React, {useState} from 'react';
-import { Button } from 'react-bootstrap';
+import React from 'react';
+import {Button} from 'react-bootstrap'
 
 function closeMenu() {
-  document.getElementById("menu").style.height = "0%";
-} 
+    document.getElementById("menu").style.height = "0%";
+}
 
-function Menu () {
-    const [currentPage, setCurrentPage] = useState('home')
-    return(
-        <div className='overlay' id='menu'>
-            <Button variant='danger' id='closeMenuBtn' onClick={closeMenu}>Close</Button>
-            <div className='overlay-content'>
-                <h1 onClick={setCurrentPage('home')}>Home</h1>
-                <h1 onClick={setCurrentPage('about')}>About Me</h1>
-                <h1 onClick={setCurrentPage('projects')}>Projects</h1>
-                <h1 onClick={setCurrentPage('social')}>Social Media</h1>
-            </div>
+function Menu (props) {
+    const {menuOptions, setCurrentOption} = props
+    return(  
+        <div id="menu" className='overlay'>    
+            <ul className='overlay-content'>
+                {menuOptions.map((option) => (
+                    <li className="menu-item" key={option.name}>
+                        <a
+                        className="menu-link"
+                        href={`#${option.name}`}
+                        onClick={() => {
+                            setCurrentOption(option.name);
+                            closeMenu();
+                        }}
+                        ><h1>{option.text}</h1></a>
+                    </li>
+                ))}
+            </ul>
+            <Button Button variant='danger' id='closeBtn' className='closeBtn' onClick={closeMenu}>Close</Button>
         </div>
     )
 }
