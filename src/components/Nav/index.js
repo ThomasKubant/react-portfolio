@@ -1,17 +1,25 @@
-import { Button, Col } from 'react-bootstrap'
 import React from 'react'
-import logo from '../../assets/images/logo.png'
 
-function openMenu() {
-  document.getElementById("menu").style.height = "100%";
-}
+function Nav(props) {
+    const {navCategories, setCurrentCategory} = props;
 
-function Nav() {
     return (
         <header className="flex-row flex-spaceBetween navBar">
-            <Col md='10'><img src={logo}></img></Col>
-            <Button variant='outline-light'>Contact Me</Button>
-            <Button variant='outline-light' id='openMenuBtn' onClick={openMenu}>Menu</Button>
+            <ul>
+                {navCategories.map((category) => (
+                    <li className="navItem" key = {category.name}>
+                        <a
+                            className="navLink"
+                            href={`#${category.name}`}
+                            onClick={()=>{
+                                setCurrentCategory(category.name)
+                            }}
+                        >
+                        {category.text}    
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </header>
     )
 }
