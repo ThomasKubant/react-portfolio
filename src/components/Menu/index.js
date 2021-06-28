@@ -1,8 +1,10 @@
 import React from 'react';
-import {Button} from 'react-bootstrap'
+import Particles from 'react-particles-js'
+import particlesConfig from '../../assets/particlesConfig';
 
 function closeMenu() {
     document.getElementById("menu").style.height = "0%";
+    document.getElementById("overlay-particles").style.height = "0%";
 }
 
 function Menu (props) {
@@ -23,7 +25,8 @@ function Menu (props) {
                     </li>
                 ))}
             </ul>
-            <Button Button variant='danger' id='closeBtn' className='closeBtn' onClick={closeMenu}>Close</Button>
+            <Particles id="overlay-particles" params={particlesConfig}/>
+            <h1 id="closeBtn" className="closeBtn" onClick={closeMenu}>X</h1>
         </div>
     )
 }

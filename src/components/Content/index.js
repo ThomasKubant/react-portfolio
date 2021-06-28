@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../Home';
 import About from '../About';
 import Projects from '../Projects';
-import Social from '../Social'
+import Contact from '../Contact'
 function Content(props) {
     let {currentOption} = props;
 
@@ -13,8 +13,8 @@ function Content(props) {
             return <About />
         case 'projects':
             return <Projects />
-        case 'social':
-            return <Social />
+        case 'contact':
+            return <Contact />
         default:
             return <Home />
     }

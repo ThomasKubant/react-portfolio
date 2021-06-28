@@ -1,117 +1,123 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-    background-color: #8a2be2;
+  background-color: #151e30;
 }
-
 .overlay-content a {
   text-decoration: none;
 }
-
 .flex-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .flex-row {
-    display: flex;
-    align-items: center;
-    flex-wrap:nowrap;
+  display: flex;
+  align-items: center;
+  flex-wrap:nowrap;
 }
-
 .flex-spaceBetween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
-
 .navBar {
-    margin: 10px 15px;
-    align-items: flex-start!important;
+  margin: 10px 15px;
+  align-items: flex-start!important;
 }
-
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+ /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 0%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+ /* Stay in place */
+  z-index: 1;
+ /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: #47597E;
+ /* Black w/opacity */
+  overflow-x: hidden;
+ /* Disable horizontal scroll */
+  transition: 0.5s;
+ /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%;
+ /* 25% from the top */
+  width: 100%;
+ /* 100% width */
+  text-align: center;
+ /* Centered text/links */
+  margin-top: 30px;
+ /* 30px top margin to avoid conflict with the close button on smaller screens */
   list-style: none;
 }
-
 .overlay h1 {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  color: #DBE6FD;
+  display: block;
+ /* Display block instead of inline */
+  transition: 0.3s;
+ /* Transition effects on hover (color) */
   cursor: pointer;
 }
-
 /* When you mouse over the navigation links, change their color */
 .overlay h1:hover, .overlay h1:focus {
-  color: #f1f1f1;
+  color: #B2AB8C;
 }
-
 /* Position the close button (top right corner) */
 .closeBtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+  color: #DBE6FD !important;
 }
-
+.closeBtn:hover, .closeBtn:focus {
+  color: #B2AB8C!important;
+}
 #openMenuBtn {
   margin-left: 10px;
 }
-
 #tsparticles canvas {
-    display: block;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
-    transition: opacity .8s ease, transform 1.4s ease
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease 
 }
-
 #tsparticles {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -10;
-    top: 0;
-    left: 0
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0 
 }
-
+#overlay-particles {
+  width: 100%;
+  height: 0%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0 
+}
 #splashImage {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit:cover;
   margin-bottom: 15px;
-  box-shadow: 2px 2px #272727;
+  box-shadow: 2px 2px #293B5F;
 }
-
 .btn {
   font-size: 1.5rem!important;
 }
-
 #homePage {
   display: flex;
   flex-direction: column;
@@ -119,31 +125,136 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
-
 h1, h2 {
-  color: #f1f1f1;
-  text-shadow: 2px 2px #272727;
+  color: #DBE6FD;
+  text-shadow: 2px 2px #293B5F;
   text-align: center;
 }
 
+h3 {
+  color: #DBE6FD;
+  text-shadow: 1px 1px #272727;
+}
+
 p {
-  color: #f1f1f1;
+  color: #DBE6FD;
   text-shadow: 1px 1px #272727;
   font-size: 24px;
   width: 75vw;
   align-self: center;
 }
 
+label {
+  color: #DBE6FD;
+  text-shadow: 1px 1px #272727;
+}
+
 .content {
   margin-top: 60px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  margin-top: 60px;
+  width: 95%;
+}
+
+.sidebar {
+  background-color: #47597E;
+  padding: 15px;
+  border-radius: 10px;
+  margin-left: 120px;
+  box-shadow: 2px 2px #293B5F;
+  height: 525px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.about-text {
+  font-size: 30px;
+}
+
+#btn-group-item {
+  border: 1px solid#272727;
+  margin: 3px;
+  font-size: 20px !important;
+}
+
+.project-item {
+  background-color: #47597E;
+  border-radius: 15px;
+  width: 500px;
+  margin: 20px;
+  box-shadow: 2px 2px #293B5F;
+}
+
+.project-item p {
+  width: 31rem;
+  text-shadow: 1px 1px #293B5F;
+}
+
+.project-item img {
+  width: 20vw;
+  margin: 1rem 3rem;
+}
+
+.project-item a {
+  margin: 0px 3.2rem;
+  color: #DBE6FD;
+  text-shadow: 1px 1px #293B5F;
+}
+
+.project-item a:hover {
+  color: #B2AB8C
+}
+
+.projects-group {
+  display: flex;
+  justify-content: center;
+}
+
+.socialsBar {
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  margin: 10px;
 
 }
+
+.socialImg {
+  width: 50px;
+  margin:  0px 15px;
+  filter: invert(100%) sepia(49%) saturate(2561%) hue-rotate(178deg) brightness(102%) contrast(98%);}
+
+.socialImg:hover {
+  filter: invert(78%) sepia(7%) saturate(987%) hue-rotate(12deg) brightness(89%) contrast(82%);
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-field label {
+  font-size: 24px;
+}
+
+form button {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .logo {
-    width: 94px;
-    height: 75px;
-  }
+      width: 94px;
+      height: 75px;
+ }
   .btn {
-    font-size: 1rem;
-  }
+      font-size: 1rem;
+ }
 }
