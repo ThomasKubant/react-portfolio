@@ -53,7 +53,7 @@ const projectList = [
 function Projects() {
     return(
         <Row className={`project-content`}>
-            <Col md={2} className="sidebar">
+            {/* <Col md={2} className="sidebar">
                 <h2>Filter Projects</h2>
                 <div className="technology-filter">
                     <h3>Technologies:</h3>
@@ -75,8 +75,8 @@ function Projects() {
                     </ToggleButtonGroup>
                 </div>
                 
-            </Col>
-            <Col md={9} className="projects">
+            </Col> */}
+            <Col className="projects">
                 <Row><h1 className="projects-header">Projects</h1></Row>
                 <Row className="projects-group">
                     <Project projectList={projectList}></Project>
