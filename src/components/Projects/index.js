@@ -19,6 +19,16 @@ const projectList = [
         deployedLink: "https://lit-anchorage-48237.herokuapp.com/"
     },
     {
+        name: "Book Search Engine",
+        description: "Book search engine using Google's book API. Make an account, search for your favorite books, and save them to your favorites list.",
+        tech: ["node", "express", "mongo", "react", "mern"],
+        type: "full",
+        image: null,
+        dateStarted: "06/29/2021",
+        gitHubLink: "https://github.com/ThomasKubant/book-search-engine",
+        deployedLink: "https://thomaskubant-book-search.herokuapp.com/"
+    },
+    {
         name: "Social Media Backend",
         description: "Backend server and database for a social media website",
         tech: ['node', 'mongo', 'express'],
@@ -47,6 +57,16 @@ const projectList = [
         dateStarted: "06/09/2021",
         gitHubLink: "https://github.com/ThomasKubant/Blog",
         deployedLink: "https://mighty-cliffs-21833.herokuapp.com/"
+    },
+    {
+        name: "Note Taker",
+        description: "Simple full stack app for taking and saving various notes.",
+        tech: ['node', 'express'],
+        type: "full",
+        image: null,
+        dateStarted: "04/16/2021",
+        gitHubLink: "https://github.com/ThomasKubant/Note-Taker",
+        deployedLink: "https://thomaskubant.github.io/Note-Taker/"
     }
 ]
 
