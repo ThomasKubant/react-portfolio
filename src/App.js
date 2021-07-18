@@ -2,12 +2,11 @@ import React, {useState} from 'react'
 import Nav from "./components/Nav";
 import Menu from './components/Menu';
 import Content from './components/Content'
-import Social from './components/Social'
 import Particles from 'react-particles-js'
 import particlesConfig from './assets/particlesConfig';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import instagramLogo from './assets/images/insta-logo.png'
+
 
 function App() {
   const menuOptions = [
