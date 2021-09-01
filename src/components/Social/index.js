@@ -3,9 +3,15 @@ import instagramLogo from '../../assets/images/insta-logo.png'
 import gitHub from '../../assets/images/github.png'
 import youtube from '../../assets/images/youtube.png'
 import stack from '../../assets/images/stack.png'
+import email from '../../assets/images/email.png'
 
 function Social() {
     const socialList = [
+        {
+          name: "email",
+          image: email,
+          link: "mailto: thomaskubant@gmail.com" 
+        },
         {
           name: "instagram",
           image: instagramLogo,
@@ -26,8 +32,6 @@ function Social() {
           link: 'https://stackoverflow.com/users/story/14993584?view=Cv',
           image: stack
         }
-
-    
       ]
 
     return(
