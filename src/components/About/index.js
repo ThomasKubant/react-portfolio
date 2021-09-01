@@ -1,5 +1,4 @@
 import React from 'react';
-import Social from '../Social'
 function About() {
     return(
         <div className={`flex-col content`}>
@@ -17,7 +16,6 @@ function About() {
             creative websites excites me and fuels my passion to learn more and more every day.
             In my free time I love to play guitar and bass, and play video games.
             </p>
-            <div className="socialsBar"><Social></Social></div>
         </div>
     )
 }
