@@ -8,7 +8,7 @@ function closeMenu() {
 }
 
 function Menu (props) {
-    const {menuOptions, setCurrentOption} = props
+    const {menuOptions} = props
     return(  
         <div id="menu" className='overlay'>    
             <ul className='overlay-content'>
@@ -16,9 +16,8 @@ function Menu (props) {
                     <li className="menu-item" key={option.name}>
                         <a
                         className="menu-link"
-                        href={`#${option.name}`}
+                        href={`/${option.name}`}
                         onClick={() => {
-                            setCurrentOption(option.name);
                             closeMenu();
                         }}
                         ><h1>{option.text}</h1></a>
