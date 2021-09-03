@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Project from "./Project";
-import { Col, Row, ToggleButton, ToggleButtonGroup } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import snak from "../../assets/images/snak.jpg";
 import socialbackend from "../../assets/images/social-backend.png";
 import budget from "../../assets/images/budget.png";
@@ -17,7 +17,9 @@ const projectList = [
         image: snak,
         dateStarted: "05/10/2021",
         gitHubLink: "https://github.com/rookoyole/snakchat",
-        deployedLink: "https://lit-anchorage-48237.herokuapp.com/"
+        deployedLink: "https://lit-anchorage-48237.herokuapp.com/",
+        projectID: 'project-1',
+        imageID: '1'
     },
     {
         name: "Book Search Engine",
@@ -27,7 +29,9 @@ const projectList = [
         image: bookSearch,
         dateStarted: "06/29/2021",
         gitHubLink: "https://github.com/ThomasKubant/book-search-engine",
-        deployedLink: "https://thomaskubant-book-search.herokuapp.com/"
+        deployedLink: "https://thomaskubant-book-search.herokuapp.com/",
+        projectID: 'project-2',
+        imageID: '2'
     },
     {
         name: "Social Media Backend",
@@ -37,7 +41,9 @@ const projectList = [
         image: socialbackend,
         dateStarted: "06/04/2021",
         gitHubLink: "https://github.com/ThomasKubant/Social-Network-Backend",
-        deployedLink: "https://github.com/ThomasKubant/Social-Network-Backend"
+        deployedLink: "https://github.com/ThomasKubant/Social-Network-Backend",
+        projectID: 'project-3',
+        imageID: '3'
     },
     {
         name: "Budget Tracker",
@@ -47,7 +53,9 @@ const projectList = [
         image: budget,
         dateStarted: "06/09/2021",
         gitHubLink: "https://github.com/ThomasKubant/budget-tracker",
-        deployedLink: "https://cryptic-refuge-11081.herokuapp.com/"
+        deployedLink: "https://cryptic-refuge-11081.herokuapp.com/",
+        projectID: 'project-4',
+        imageID: '4'
     },
     {
         name: "Tech News Blog",
@@ -57,7 +65,9 @@ const projectList = [
         image: techBlog,
         dateStarted: "06/09/2021",
         gitHubLink: "https://github.com/ThomasKubant/Blog",
-        deployedLink: "https://mighty-cliffs-21833.herokuapp.com/"
+        deployedLink: "https://mighty-cliffs-21833.herokuapp.com/",
+        projectID: 'project-5',
+        imageID: '5'
     },
     {
         name: "Note Taker",
@@ -67,7 +77,9 @@ const projectList = [
         image: Notes,
         dateStarted: "04/16/2021",
         gitHubLink: "https://github.com/ThomasKubant/Note-Taker",
-        deployedLink: "https://thomaskubant.github.io/Note-Taker/"
+        deployedLink: "https://thomaskubant.github.io/Note-Taker/",
+        projectID: 'project-6',
+        imageID: '6'
     }
 ]
 

@@ -193,6 +193,7 @@ input[type='checkbox'] {
   border-radius: 15px;
   width: 500px;
   margin: 20px;
+  padding: 10px 0;
   box-shadow: 2px 2px #293B5F;
   display: flex;
   flex-direction: column;
@@ -204,15 +205,7 @@ input[type='checkbox'] {
 .project-item p {
   width: 31rem;
   text-shadow: 1px 1px #293B5F;
-}
-
-.img-wrap {
-  display: flex;
-  justify-content: center;
-}
-
-.img-wrap img {
-  width: 380px;
+  text-align: center;
 }
 
 .project-item a {
@@ -223,6 +216,15 @@ input[type='checkbox'] {
 
 .project-item a:hover {
   color: #B2AB8C
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrap img {
+  width: 380px;
 }
 
 .projects-group {
