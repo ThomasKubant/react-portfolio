@@ -5,8 +5,14 @@ function Project(props) {
     let projectClick = (e) => {
         let target = e.target;
         let foundID
-        if (target.localName == 'img') {
+        if (target.localName === 'img') {
             foundID =  'project-' + target.attributes.id.nodeValue;
+        }
+        else if (target.className === 'img-wrap') {
+            foundID = target.parentElement.attributes.id.nodeValue;
+        }
+        else if (target.localName === 'div') {
+            foundID = target.attributes.id.nodeValue;
         }
         else {
             foundID = target.parentElement.attributes.id.nodeValue;

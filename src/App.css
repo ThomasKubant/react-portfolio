@@ -202,6 +202,11 @@ input[type='checkbox'] {
 
 }
 
+.project-item:hover {
+  background-color: #293B5F;
+  cursor: pointer;
+}
+
 .project-item p {
   width: 31rem;
   text-shadow: 1px 1px #293B5F;
