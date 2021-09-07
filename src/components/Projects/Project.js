@@ -33,9 +33,6 @@ function Project(props) {
                 <div className="img-wrap">
                     <img id={project.imageID} src={project.image}></img>
                 </div>
-                <div className="modal">
-                    <h1>{foundProject.name}</h1>
-                </div>
             </div>
         ))
     )

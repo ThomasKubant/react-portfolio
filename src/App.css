@@ -291,6 +291,16 @@ form button {
   margin-top: 10px;
 }
 
+.project-modal {
+  width: 95vw;
+  height: 95vh;
+  position: fixed;
+  background-color: #47597E;
+  box-shadow: 3px 3px #B2AB8C;
+  top: 2.5vh;
+  left: 2.5vw;
+}
+
 @media screen and (max-width: 600px) {
   .logo {
       width: 94px;
