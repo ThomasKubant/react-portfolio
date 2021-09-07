@@ -1,8 +1,7 @@
 import React from 'react';
 
 function Project(props) {
-    let foundProject;
-    const { projectList } = props
+    const { projectList, setShowModal } = props
     let projectClick = (e) => {
         let target = e.target;
         let foundID
@@ -19,12 +18,14 @@ function Project(props) {
             foundID = target.parentElement.attributes.id.nodeValue;
         }
         
-        for(let i=0;i<projectList.length;i++) {
-            if(projectList[i].projectID == foundID) foundProject = projectList[i]
+        for(let i = 0; i < projectList.length; i++) {
+            if(projectList[i].projectID == foundID) localStorage.setItem("foundProject", JSON.stringify(projectList[i]));
         }
+        setShowModal(true);
+        let toBeLogged = localStorage.getItem("foundProject")
+        console.log(JSON.parse(toBeLogged))
     }
     return (
-
         projectList.map((project) => (
             <div className="project-item" key={project.name} id={project.projectID} onClick={projectClick}>
                 <h1>{project.name}</h1>

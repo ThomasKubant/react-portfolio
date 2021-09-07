@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Project from "./Project";
 import { Col, Row } from "react-bootstrap";
 import snak from "../../assets/images/snak.jpg";
@@ -7,6 +7,7 @@ import budget from "../../assets/images/budget.png";
 import techBlog from "../../assets/images/techBlog.png";
 import bookSearch from "../../assets/images/bookSearch.jpg"
 import Notes from "../../assets/images/Notes.png"
+import Modal from './Modal'
 
 const projectList = [
     {
@@ -84,6 +85,7 @@ const projectList = [
 ]
 
 function Projects() {
+    let [showModal, setShowModal] = useState(false)
     return(
         <Row className={`project-content`}>
             {/* <Col md={2} className="sidebar">
@@ -111,8 +113,9 @@ function Projects() {
             </Col> */}
             <Col className="projects">
                 <Row><h1 className="projects-header">Projects</h1></Row>
+                <Modal showModal={showModal} setShowModal={setShowModal} projectList={projectList} />
                 <Row className="projects-group">
-                    <Project projectList={projectList}></Project>
+                    <Project projectList={projectList} setShowModal={setShowModal}></Project>
                 </Row>
             </Col>
 
