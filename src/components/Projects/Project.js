@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Project(props) {
+    let foundProject;
     const { projectList } = props
     let projectClick = (e) => {
         let target = e.target;
@@ -18,7 +19,9 @@ function Project(props) {
             foundID = target.parentElement.attributes.id.nodeValue;
         }
         
-        console.log(foundID)
+        for(let i=0;i<projectList.length;i++) {
+            if(projectList[i].projectID == foundID) foundProject = projectList[i]
+        }
     }
     return (
 
@@ -28,6 +31,9 @@ function Project(props) {
                 <p>{project.description}</p>
                 <div className="img-wrap">
                     <img id={project.imageID} src={project.image}></img>
+                </div>
+                <div className="modal">
+                    <h1>{foundProject.name}</h1>
                 </div>
             </div>
         ))
