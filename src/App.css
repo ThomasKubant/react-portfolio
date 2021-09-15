@@ -75,10 +75,24 @@ body {
   right: 45px;
   font-size: 60px;
   color: #DBE6FD !important;
+  cursor: pointer;
 }
 .closeBtn:hover, .closeBtn:focus {
   color: #B2AB8C!important;
 }
+
+.closeModalBtn {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 30px;
+  color: #DBE6FD !important;
+  cursor: pointer;
+}
+.closeModalBtn:hover, .closeModalBtn:focus {
+  color: #B2AB8C!important;
+}
+
 #openMenuBtn {
   margin-left: 10px;
 }
@@ -296,7 +310,7 @@ form button {
   height: 95vh;
   position: fixed;
   background-color: #47597E;
-  box-shadow: 3px 3px #B2AB8C;
+  border: 5px solid #DBE6FD;
   top: 2.5vh;
   left: 2.5vw;
 }

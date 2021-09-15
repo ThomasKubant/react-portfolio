@@ -13,7 +13,7 @@ const projectList = [
     {
         name: "Snakchat",
         description: "Social media for snack lovers to share their thoughts about unique snacks.",
-        tech: ["node", "sql", "express"],
+        tech: ["Node.js", "SQL", "Express"],
         type: "full",
         image: snak,
         dateStarted: "05/10/2021",
@@ -25,7 +25,7 @@ const projectList = [
     {
         name: "Book Search Engine",
         description: "Book search engine using Google's book API. Make an account, search for your favorite books, and save them to your favorites list.",
-        tech: ["node", "express", "mongo", "react", "mern"],
+        tech: ["Node.js", "Express", "MongoDB", "React", "MERN Stack"],
         type: "full",
         image: bookSearch,
         dateStarted: "06/29/2021",
@@ -37,7 +37,7 @@ const projectList = [
     {
         name: "Social Media Backend",
         description: "Backend server and database for a social media website",
-        tech: ['node', 'mongo', 'express'],
+        tech: ['Node.js', 'MongoDB', 'Express'],
         type: "back",
         image: socialbackend,
         dateStarted: "06/04/2021",
@@ -49,7 +49,7 @@ const projectList = [
     {
         name: "Budget Tracker",
         description: "Budget tracking app that features offline functionality and a graph displaying budget history",
-        tech: ['node', 'mongo', 'express', 'PWA'],
+        tech: ['Node.js', 'MongoDB', 'Express', 'Progressive Web App'],
         type: "full",
         image: budget,
         dateStarted: "06/09/2021",
@@ -61,7 +61,7 @@ const projectList = [
     {
         name: "Tech News Blog",
         description: "Social Media website that allows users to discuss the latest and greatest tech news",
-        tech: ['node', 'sql', 'express'],
+        tech: ['Node.js', 'SQL', 'Express'],
         type: "full",
         image: techBlog,
         dateStarted: "06/09/2021",
@@ -73,7 +73,7 @@ const projectList = [
     {
         name: "Note Taker",
         description: "Simple full stack app for taking and saving various notes.",
-        tech: ['node', 'express'],
+        tech: ['Node.js', 'Express'],
         type: "full",
         image: Notes,
         dateStarted: "04/16/2021",
