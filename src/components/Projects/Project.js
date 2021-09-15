@@ -19,7 +19,7 @@ function Project(props) {
         }
         
         for(let i = 0; i < projectList.length; i++) {
-            if(projectList[i].projectID == foundID) localStorage.setItem("foundProject", JSON.stringify(projectList[i]));
+            if(projectList[i].projectID === foundID) localStorage.setItem("foundProject", JSON.stringify(projectList[i]));
         }
         setShowModal(true);
         let toBeLogged = localStorage.getItem("foundProject")
