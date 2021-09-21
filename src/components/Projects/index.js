@@ -38,7 +38,7 @@ const projectList = [
         name: "Social Media Backend",
         description: "Backend server and database for a social media website",
         tech: ['Node.js', 'MongoDB', 'Express'],
-        type: "back",
+        type: "Back End",
         image: socialbackend,
         dateStarted: "06/04/2021",
         gitHubLink: "https://github.com/ThomasKubant/Social-Network-Backend",

@@ -38,11 +38,12 @@ function Modal(props) {
                     <h2>Technologies used: {techStr}</h2>
                     <h2>Stack: {project.type}</h2>
                     <h2>Date started: {project.dateStarted}</h2>
+                    <div className="modal-buttons">
+                        <Button className="modal-button" href={project.gitHubLink} target="_blank" variant="primary">Github Repository</Button>
+                        <Button className="modal-button" href={project.deployedLink} target="_blank" variant="primary">Website</Button>
+                    </div>
                 </div>
-                <div className="modal-buttons">
-                    <Button href={project.gitHubLink} target="_blank" variant="outline-primary">Github Repository</Button>
-                    <Button href={project.deployedLink} target="_blank" variant="outline-primary">Website</Button>
-                </div>
+                
                 
             </div>
 
