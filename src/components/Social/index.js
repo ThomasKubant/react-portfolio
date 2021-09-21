@@ -37,7 +37,7 @@ function Social() {
     return(
         socialList.map((social) => (
             <div key={social.name}>
-                <a href={social.link}><img className='socialImg' src={social.image}></img></a>
+                <a href={social.link} target="_blank"><img className='socialImg' src={social.image}></img></a>
             </div>
         ))
     )

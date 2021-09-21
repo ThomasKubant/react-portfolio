@@ -173,6 +173,15 @@ label {
   align-items: center;
 }
 
+.contact-content {
+  margin-left: 2.5%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-content {
   margin-left: 2.5%;
   margin-top: 60px;
@@ -306,26 +315,34 @@ form button {
 }
 
 .project-modal {
-  width: 95vw;
-  height: 95vh;
+  width: 80vw;
+  height: 80vh;
   position: fixed;
   background-color: #47597E;
   border: 5px solid #DBE6FD;
-  top: 2.5vh;
-  left: 2.5vw;
+  top: 10vh;
+  left: 10vw;
 }
 
 .project-modal-content {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: space-between;
   flex-direction: column;
   margin: 60px 20px;
   width: 50%;
+  height: 55%;
 }
 
 .project-modal-content *{
   text-align: left;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .outside-modal {

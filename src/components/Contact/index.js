@@ -17,7 +17,7 @@ function Contact() {
     e.target.reset();
   }
   return (
-    <div className="content">   
+    <div className="contact-content">   
       <div className="contact-page">
         <h1>Contact Me</h1>
         <h2>ThomasKubant@Gmail.com</h2>
@@ -40,9 +40,9 @@ function Contact() {
           </button>
         </form>
       </div>
-      <div className="socialsBar">
+      {/* <div className="socialsBar">
         <Social></Social>
-      </div>
+      </div> */}
     </div>
   );
 }
