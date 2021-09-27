@@ -1,7 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js'
 import particlesConfig from '../../assets/particlesConfig';
-
+import resume from '../../assets/Thomas-Kubant-Resume.pdf'
 function closeMenu() {
     document.getElementById("menu").style.height = "0%";
     document.getElementById("overlay-particles").style.height = "0%";
@@ -23,7 +23,7 @@ function Menu (props) {
                         ><h1>{option.text}</h1></a>
                     </li>
                 ))}
-                <li className="menu-item"><a className="menu-link" href="static/media/Thomas-Kubant-Resume.pdf" target="_blank">Resume</a></li>
+                <li className="menu-item"><a className="menu-link" href={resume} target="_blank">Resume</a></li>
             </ul>
             <Particles id="overlay-particles" params={particlesConfig}/>
             <h1 id="closeBtn" className="closeBtn" onClick={closeMenu}>X</h1>
