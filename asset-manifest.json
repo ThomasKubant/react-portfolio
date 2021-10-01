@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.c52980ce.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.5f6cb3cb.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.5f6cb3cb.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.9a396e7c.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.9a396e7c.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/react-portfolio/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.e894753a.chunk.js": "/react-portfolio/static/js/2.e894753a.chunk.js",
+    "static/js/2.e894753a.chunk.js.map": "/react-portfolio/static/js/2.e894753a.chunk.js.map",
+    "static/js/3.5b7ba6de.chunk.js": "/react-portfolio/static/js/3.5b7ba6de.chunk.js",
+    "static/js/3.5b7ba6de.chunk.js.map": "/react-portfolio/static/js/3.5b7ba6de.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/react-portfolio/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.c52980ce.chunk.css.map": "/react-portfolio/static/css/main.c52980ce.chunk.css.map",
+    "static/js/2.e894753a.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.e894753a.chunk.js.LICENSE.txt",
+    "static/media/Notes.fdbf32da.png": "/react-portfolio/static/media/Notes.fdbf32da.png",
+    "static/media/Thomas-Kubant-Resume.17088e3c.pdf": "/react-portfolio/static/media/Thomas-Kubant-Resume.17088e3c.pdf",
+    "static/media/bookSearch.2f0f82f0.jpg": "/react-portfolio/static/media/bookSearch.2f0f82f0.jpg",
+    "static/media/budget.4bcfa438.png": "/react-portfolio/static/media/budget.4bcfa438.png",
+    "static/media/github.1c95b85d.png": "/react-portfolio/static/media/github.1c95b85d.png",
+    "static/media/insta-logo.36e8e27b.png": "/react-portfolio/static/media/insta-logo.36e8e27b.png",
+    "static/media/logo.721521bf.png": "/react-portfolio/static/media/logo.721521bf.png",
+    "static/media/snak.86642fac.jpg": "/react-portfolio/static/media/snak.86642fac.jpg",
+    "static/media/social-backend.ba44f135.png": "/react-portfolio/static/media/social-backend.ba44f135.png",
+    "static/media/splash.afb678d2.jpg": "/react-portfolio/static/media/splash.afb678d2.jpg",
+    "static/media/stack.37418da4.png": "/react-portfolio/static/media/stack.37418da4.png",
+    "static/media/techBlog.058ec3bd.png": "/react-portfolio/static/media/techBlog.058ec3bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a396e7c.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.e894753a.chunk.js",
+    "static/css/main.c52980ce.chunk.css",
+    "static/js/main.5f6cb3cb.chunk.js"
+  ]
+}
