@@ -13,6 +13,7 @@ const projectList = [
     {
         name: "Snakchat",
         description: "Social media for snack lovers to share their thoughts about unique snacks.",
+        longDescription: "Social media for snack lovers to share their thoughts about unique snacks. The goal of the website is to create a friendly community for snack lovers to discuss unique treats they find.  Users can sign up, view posts, create posts, comment on posts, like posts, edit their own posts, and delete their own posts.Discussions include thoughts on snacks, where to find snacks, and much more. Some goals for future developments are visual improvements, implementing a thread system, and better filtering options for the main page's feed. My role in this project was coming up with the concept and branding, front end development, and debugging. Other contributors include Maribel Ellison and Kyle Ryan.",
         tech: ["Node.js", "SQL", "Express"],
         type: "Full Stack",
         image: snak,
@@ -25,6 +26,7 @@ const projectList = [
     {
         name: "Book Search Engine",
         description: "Book search engine using Google's book API. Make an account, search for your favorite books, and save them to your favorites list.",
+        longDescription: "Book search engine using Google’s book API. After signing up, users can search for any book or series, get a list of every match, view images and detailed descriptions, and add books to their favorites list. After adding a book to the favorites list, it is possible to view and edit your favorite books with ease. Some future developments are implementing a friend system so users can add their peers and view each other's lists, and adding the ability to rate and comment on books. I am the sole author of this project.",
         tech: ["Node.js", "Express", "MongoDB", "React", "MERN Stack"],
         type: "Full Stack",
         image: bookSearch,

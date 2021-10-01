@@ -34,7 +34,7 @@ function Modal(props) {
                 <h1 className="closeModalBtn" onClick={closeModal}>X</h1>
                 <h1>{project.name}</h1>
                 <div className="project-modal-content">
-                    <h2>{project.description}</h2>
+                    <h2>{project.longDescription}</h2>
                     <h2>Technologies used: {techStr}</h2>
                     <h2>Stack: {project.type}</h2>
                     <h2>Date started: {project.dateStarted}</h2>

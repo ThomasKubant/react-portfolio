@@ -12,7 +12,7 @@ function Nav() {
 
     return (
         <header className="flex-row flex-spaceBetween flex-nowrap navBar">
-            <img src={logo} alt="me :)" className="logo"></img>
+            <Link to="/"><img src={logo} alt="me :)" className="logo"></img></Link>
             <div>
                 <Link to="/contact"><Button variant='outline-light'>Contact Me</Button></Link>
                 <Button variant='outline-light' id='openMenuBtn' onClick={openMenu}>Menu</Button>

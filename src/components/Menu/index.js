@@ -23,7 +23,7 @@ function Menu (props) {
                         ><h1>{option.text}</h1></a>
                     </li>
                 ))}
-                <li className="menu-item"><a className="menu-link" href={resume} target="_blank">Resume</a></li>
+                <li className="menu-item"><a className="menu-link" href={resume} target="_blank"><h1>Resume</h1></a></li>
             </ul>
             <Particles id="overlay-particles" params={particlesConfig}/>
             <h1 id="closeBtn" className="closeBtn" onClick={closeMenu}>X</h1>
